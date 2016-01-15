@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BlackJack</title>
+  <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>BlackJack</h1>
+  <div class="container">
+    <div class="game">
+      <div id="dealerArea">Dealer Score:
+        <span class="score" id="dealerScore">0</span>
+      </div>
+      <div id="playArea">
+        <row class="dealer">
+          <div id="dealerCards">
+          </div>
+        </row>
+        <row class="player">
+          <div id="playerCards">
+          </div>
+        </row>
+      </div>
+      <div id="buttonArea">
+        <button class="btn btn-primary" id="playBtn">PLAY!</button>
+        <button class="btn btn-success" id="hitBtn">Hit Me</button>
+        <button class="btn btn-danger" id="stayBtn">Stay</button>
+      </div>
+      <div id="playerArea">Player Score:
+        <span class="score" id="playerScore">0</span>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.0/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>

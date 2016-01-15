@@ -1,0 +1,25 @@
+html {
+  text-align: center;
+  background-color: #000;
+}
+
+#playArea {
+  background-image: url('http://d2fhka9tf2vaj2.cloudfront.net/premium/034_blackJack/images/8.jpg');
+  border: 2px solid green;
+  min-height: 400px;
+  margin: 20px 0 20px 0;
+}
+
+#hitBtn, #stayBtn {
+  display: none;
+}
+
+.card {
+  height: 100px;
+}
+
+#playerCards {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+}
