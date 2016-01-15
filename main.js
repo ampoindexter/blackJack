@@ -135,7 +135,7 @@ function checkPlayerBust() {
 }
 
 function dealerPlay() {
-  while ($dealerScore < 16) {
+  while ($dealerScore < 17) {
     addDealerCard();
   }
   checkDealerBust();
