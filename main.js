@@ -86,6 +86,7 @@ function dealCards() {
       window.location.reload();
       swal.close();
     });
+    checkPlayerBust();
   }
 
   var $dealerCard1 = $('<img>').attr('src', dealerCard1.image).addClass('card');
