@@ -74,6 +74,7 @@ function dealCards() {
     playerAceCount++;
   }
   $playerScore = parseInt($('#playerScore').text()) + playerCard1.value + playerCard2.value;
+  checkPlayerBust();
   $('#playerScore').text($playerScore);
   if ($playerScore === 21) {
     swal({   title: "BLACKJACK!!! YOU WIN!!!",
@@ -86,7 +87,6 @@ function dealCards() {
       window.location.reload();
       swal.close();
     });
-    checkPlayerBust();
   }
 
   var $dealerCard1 = $('<img>').attr('src', dealerCard1.image).addClass('card');
